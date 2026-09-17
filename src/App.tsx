@@ -10,11 +10,14 @@ import { Menu } from './components/Menu'
 import './styles/global.css'
 import './styles/theme.css'
 import { Footer } from './components/Footer'
+import { Heading } from './components/Heading'
 
 export function App() {
+   
+    
+
     return (
     <>  
-
         <Container>
           <Logo/>          
         </Container>
@@ -32,7 +35,7 @@ export function App() {
             <div className='formRow'>
               <DefaultInput id='meuInput' 
                             type='text' 
-                            labelText='MeuLabel' 
+                            labelText='Label Text' 
                             title='Titulo' 
                             placeholder='Digite algo'
                             />
