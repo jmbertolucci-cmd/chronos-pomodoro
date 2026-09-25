@@ -11,59 +11,11 @@ import './styles/global.css'
 import './styles/theme.css'
 import { Footer } from './components/Footer'
 import { Heading } from './components/Heading'
+import { MainForm } from './components/MainForm'
+import { Home } from './pages/Home'
 
 export function App() {
-   
     
+    return ( <Home/> );
 
-    return (
-    <>  
-        <Container>
-          <Logo/>          
-        </Container>
-        
-        <Container>
-          <Menu/>
-        </Container>
-
-        <Container>
-          <CountDown/>
-        </Container>        
-
-        <Container>
-          <form className='form'>
-            <div className='formRow'>
-              <DefaultInput id='meuInput' 
-                            type='text' 
-                            labelText='Label Text' 
-                            title='Titulo' 
-                            placeholder='Digite algo'
-                            />
-            </div>
-
-            <div className='formRow'>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-
-            <div className='formRow'>
-              <Cycles/>
-            </div>
-
-            <div className='formRow'>
-              <p>000000</p>
-            </div>
-
-            <div className='formRow'>
-              <DefaultButton icon={<PlayCircleIcon/>} color='green'/>              
-            </div>
-
-          </form>
-        </Container>  
-
-        <Container>
-          <Footer/>
-        </Container>
-
-    </>
-  )
 }
